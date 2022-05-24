@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <!-- bootstrap - link cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-primary bg-dark top-5">jquery Learning</h1>
+
+        <div class="row">
+            <div class="col-sm-1">
+                <input type="button" id="button1" class="btn btn-primary " value="Test">
+            </div>
+            <div class="col-sm-11">
+                <input type="text" id="test1" class="form-control">
+            </div>
+        </div>
+
+        <div class="row row-margin-05">
+            <div class="col-sm-4">
+                <select id="select1" class="form-select">
+                    <option value="1">First Option</option>
+                    <option value="2">Second Option</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#test1").keypress(function () {
+                alert('You clicked to type something');
+            });
+
+            $("#select1").change(function () {
+                alert('You changed something!');
+            });
+
+        });
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
